@@ -38,19 +38,21 @@
     <body>
 
         <header>
+
             <nav>
                 <div class="row">
                     <img src="resources/img/logo.png" alt="Omnifood logo" class="logo" />
+                    <img src="resources/img/logo-black.png" alt="Omnifood logo" class="logo-black" />
                     <ul class="main-nav js--main-nav">
                         <li><a href="#services">Услуги</a></li>
                         <li><a href="#about">За нас</a></li>
                         <li><a href="#contact">Контакти</a></li>
                         <li class="contact-phone"><i class="icon ion-ios-telephone-outline"></i>&nbsp; 088 8031550</li>
                     </ul>
-                    <!--a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round" /></a-->
-                    <a class="mobile-nav-icon js--nav-icon"><i>x</i></a>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="icon ion-navicon-round"></i></a>
                 </div>
             </nav>
+
             <div class="home-text-box">
                 <h1>
                     Експертни оценки от<br/>
@@ -61,6 +63,7 @@
                     Коректно отношение в минимални срокове
                 </h2>
             </div>
+
         </header>
 
         <section class="section-services js--section-services" id="services">
@@ -69,7 +72,6 @@
             </div>
             <div class="row">
                 <div class="col span-1-of-4 box">
-                    <!--i class="ion-ios-infinite-outline icon-big" /-->
                     <h3>ПОЗЕМЛЕНИ ИМОТИ</h3>
                     <ul class="services-showcase">
                         <li>Оценки на земи в регулация и извън регулация</li>
@@ -79,7 +81,6 @@
                     <a href="#" class="services-link">...</a>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <!--i class="ion-ios-cart-outline icon-big" /-->
                     <h3>СГРАДИ</h3>
                     <ul class="services-showcase">
                         <li>Оценки на апартаменти</li>
@@ -89,7 +90,6 @@
                     <a href="#" class="services-link">...</a>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <!--i class="ion-ios-infinite-outline icon-big" /-->
                     <h3>МАШИНИ И СЪОРЪЖЕНИЯ</h3>
                     <ul class="services-showcase">
                         <li>Оценки на транспортни МПС</li>
@@ -99,7 +99,6 @@
                     <a href="#" class="services-link">...</a>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <!--i class="ion-ios-nutrition-outline icon-big" /-->
                     <h3>ТЪРГОВСКИ ПРЕДПРИЯТИЯ</h3>
                     <ul class="services-showcase">
                         <li>Анализ и оценки на търговски</li>
@@ -111,7 +110,6 @@
             </div>
             <div class="row">
                 <div class="col span-1-of-4 box">
-                    <!--i class="ion-ios-stopwatch-outline icon-big" /-->
                     <h3>НЕМАТЕРИАЛНИ АКТИВИ</h3>
                     <ul class="services-showcase">
                         <li>Авторски права</li>
@@ -121,7 +119,6 @@
                     <a href="#" class="services-link">...</a>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <!--i class="ion-ios-cart-outline icon-big" /-->
                     <h3>ФИНАНСОВИ АКТИВИ</h3>
                     <ul class="services-showcase">
                         <li>Оценка на пакети акции;</li>
@@ -131,7 +128,6 @@
                     <a href="#" class="services-link">...</a>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <!--i class="ion-ios-stopwatch-outline icon-big" /-->
                     <h3>ГОРИ</h3>
                     <ul class="services-showcase">
                         <li>Експертни оценки и определяне на базисни цени на горски масиви</li>
@@ -140,7 +136,6 @@
                     <a href="#" class="services-link">...</a>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <!--i class="ion-ios-nutrition-outline icon-big" /-->
                     <h3>ТРАЙНИ НАСАЖДЕНИЯ</h3>
                     <ul class="services-showcase">
                         <li>Овощни култури и овощни маточни насаждения</li>
@@ -226,7 +221,7 @@
                                 </div>                        
                                 <div class="row">
                                     <div class="col span-1-of-3">
-                                        <label for="name">Вашето име (задължително)</label>
+                                        <label for="name">Вашето име</label>
                                     </div>
                                     <div class="col span-2-of-3">
                                         <input type="text" name="name" id="name" placeholder="Вашето име" required />
@@ -234,7 +229,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col span-1-of-3">
-                                        <label for="phone">Телефон (задължително)</label>
+                                        <label for="phone">Телефон</label>
                                     </div>
                                     <div class="col span-2-of-3">
                                         <input type="text" name="phone" id="phone" placeholder="Телефон" required />
@@ -242,7 +237,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col span-1-of-3">
-                                        <label for="email">Вашият Email (задължително)</label>
+                                        <label for="email">Вашият email</label>
                                     </div>
                                     <div class="col span-2-of-3">
                                         <input type="text" name="email" id="email" placeholder="Email" required />
