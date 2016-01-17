@@ -207,7 +207,7 @@
                             <h3>НАПРАВЕТЕ ЗАЯВКА ЗА ОЦЕНКА!</h3>
                         </div>
                         <div class="row">
-                            <form method="post" action="mailer.php" class="contact-form">
+                            <form method="post" action="mailer.php" class="contact-form" id="contact-form">
                                 <div class="row">
                                     <?php
                                         $result = isset($_GET['success']) ? $_GET['success'] : 0;
@@ -297,6 +297,7 @@
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.min.js"></script>
         <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
         <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
@@ -307,13 +308,12 @@
         <script src="resources/js/scripts.js"></script>
 
         <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-43101579-2', 'auto');
-          ga('send', 'pageview');
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-43101579-2', 'auto');
+            ga('send', 'pageview');
         </script>
 
     </body>

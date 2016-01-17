@@ -60,6 +60,7 @@ $(document).ready(function () {
     });
 
     /* Google maps */
+
     var map = new GMaps({
         div: '.map',
         lat: 42.433536,
@@ -73,6 +74,23 @@ $(document).ready(function () {
         title: 'ocenitelbg.com',
         infoWindow: {
             content: '<p>Нашия офис в Стара Загора</p>'
+        }
+    });
+
+    /* Form validation */
+    $("#contact-form").validate({
+        rules: {
+            name: "required",
+            phone: "required",
+            email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            name: "Моля въведете вашето име",
+            phone: "Моля въведете вашия телефон",
+            email: "Моля въведете вашия email"
         }
     });
 });
