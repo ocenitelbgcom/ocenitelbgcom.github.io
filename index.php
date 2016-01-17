@@ -67,7 +67,7 @@
             <div class="row">
                 <h2>Услуги</h2>
             </div>
-            <div class="row js--wp-1TODO">
+            <div class="row">
                 <div class="col span-1-of-4 box">
                     <!--i class="ion-ios-infinite-outline icon-big" /-->
                     <h3>ПОЗЕМЛЕНИ ИМОТИ</h3>
@@ -208,7 +208,7 @@
 
                 <div class="col span-1-of-2 box">
                     <div class="form-box" id="form">
-                        <div class="row">
+                        <div class="row js--wp-1">
                             <h3>НАПРАВЕТЕ ЗАЯВКА ЗА ОЦЕНКА!</h3>
                         </div>
                         <div class="row">
