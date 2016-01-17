@@ -1,39 +1,35 @@
 <?php
-
     // Get/sanitize form fields
     $name = strip_tags(trim($_POST["name"]));
-    $name = str_replace(array("\r","\n"),array(" "," "),$name);
-    $phone = filter_var(trim($_POST["phone"]), FILTER_SANITIZE_EMAIL);
+    $name = str_replace(array("\r","\n"),array(" "," "), $name);
+    $phone = trim($_POST["phone"]);
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $ownership = filter_var(trim($_POST["ownership"]), FILTER_SANITIZE_EMAIL);
+    $ownership = trim($_POST["ownership"]);
     $message = trim($_POST["message"]);
 
     // Validation
-    if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: http://www.ocenitelbg.com/index.php?success=-1#form");
+    if (empty($name) OR (empty($phone) AND !filter_var($email, FILTER_VALIDATE_EMAIL))) {
+        header("Location: http://www.ocenitelbg.com/index.php?success=-1#contact");
         exit;
     }
 
     // Prepare mail
 
-    $recipient = "jivkokweb@live.com"; // "varban.kolev@ocenitelbg.com";
+    $recipient = "varban.kolev@ocenitelbg.com";
 
-    $subject = "ocenitelbg.com - new message from $name";
+    $subject = "ocenitelbg.com: message from $name";
 
-    // Build the email content.
-    $email_content = "Name: $name\n";
-    $email_content .= "Phone: $phone\n\n";
-    $email_content .= "Email: $email\n\n";
-    $email_content .= "Ownership: $ownership\n\n";
-    $email_content .= "Message:\n$message\n";
+    $email_content = "Име: $name\n";
+    $email_content .= "Телефон: $phone\n";
+    $email_content .= "Емайл: $email\n";
+    $email_content .= "Собственост: $ownership\n\n";
+    $email_content .= "Съобщение:\n$message\n";
 
-    // Build the email headers.
-    $email_headers = "From: $name <$email>";
+    $email_headers = filter_var($email, FILTER_VALIDATE_EMAIL) ? "From: $name <$email>" : "From: ocenitelbg.com <varban.kolev@ocenitelbg.com>";
 
-    // Send the email.
+    // Send
     mail($recipient, $subject, $email_content, $email_headers);
     
-    // Redirect to the index.html page with success code
-    header("Location: http://www.ocenitelbg.com/index.php?success=1#form");
-
+    // Redirect to the index page with success code
+    header("Location: http://www.ocenitelbg.com/index.php?success=1#contact");
 ?>

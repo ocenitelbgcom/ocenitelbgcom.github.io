@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Лицензиран оценител на недвижими имоти, машини и съоръжения. Ако имате нужда от оценка на вашия имот, можете да се доверите на нашите експерти." />
 
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=cyrillic" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=cyrillic" />
 
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
@@ -215,12 +215,12 @@
                             <form method="post" action="mailer.php" class="contact-form">
                                 <div class="row">
                                     <?php
-                                        $result = isset($_GET['success']) && is_int($_GET['success']) ? $_GET['success'] : 0;
+                                        $result = isset($_GET['success']) ? $_GET['success'] : 0;
                                         if ($result == 1) {
-                                            echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
+                                            echo "<div class=\"form-messages success\">Вашето съобщение беше изпратено</div>";
                                         }
                                         else if ($result == -1) {
-                                            echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again!</div>";
+                                            echo "<div class=\"form-messages error\">Имаше грешки при изпращането. Моля, опитайте отново</div>";
                                         }
                                     ?>
                                 </div>                        
@@ -289,7 +289,7 @@
         <footer>
             <div class="row">
                 <div class="col span-1-of-2">
-                    © 2015 ОценителБГ.com - Всички права запазени.
+                    © 2016 ОценителБГ.com - Всички права запазени.
                 </div>
                 <div class="col span-1-of-2">
                     <ul class="footer-nav">
