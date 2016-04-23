@@ -197,7 +197,7 @@
                         <li>бул. "Патриарх Евтимий" №155, вх.0, ет.3, офис 13</li>
                         <li>гр. Стара Загора</li>
                         <li><i class="icon ion-ios-telephone-outline"></i>&nbsp; 088 8031550</li>
-                        <li><i class="icon ion-ios-email-outline"></i>&nbsp;&nbsp;<a href="mailto:varban.kolev@ocenitelbg.com">varban.kolev@ocenitelbg.com</a></li>
+                        <li><i class="icon ion-ios-email-outline"></i>&nbsp;&nbsp;<a href="mailto:varban_kolev@abv.bg">varban_kolev@abv.bg</a></li>
                     </ul>
                 </div>
 
